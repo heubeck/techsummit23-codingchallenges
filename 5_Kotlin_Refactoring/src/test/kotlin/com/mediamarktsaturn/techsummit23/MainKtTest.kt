@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
+import java.io.File
 import java.io.Serializable
 
 class Event(val name: String, val year: Int) : Serializable
@@ -62,8 +63,46 @@ class MainKtTest {
             Arguments.of(BasicHttpResponse(400, "Bad Request"), "Server responses with client error"),
             Arguments.of(BasicHttpResponse(451, "Unavailable For Legal Reasons"), "Server responses with client error"),
             Arguments.of(BasicHttpResponse(500, "Internal Server Error"), "Server responses with server error"),
-            Arguments.of(BasicHttpResponse(511, "Network Authentication Required"), "Server responses with server error"),
+            Arguments.of(
+                BasicHttpResponse(511, "Network Authentication Required"),
+                "Server responses with server error",
+            ),
             Arguments.of(BasicHttpResponse(202, "Accepted"), "Receive unexpected response code 202"),
         )
+    }
+
+    @Test
+    fun `test File_countWord when the given file can't be read`() {
+        val thrown = assertThrows(IllegalArgumentException::class.java) { File("non-existing-file.txt").countWord() }
+        assertEquals("Unable to read the current file non-existing-file.txt!", thrown.message)
+    }
+
+    @Test
+    fun `test File_countWord`() {
+        val fileUrl =
+            requireNotNull(MainKtTest::class.java.getResource("/vater-microsoft.txt")) { "test file may not be null" }
+
+        val words = File(fileUrl.file).countWord()
+
+        assertEquals(51, words.size)
+        words.forEach { (word, count) ->
+            when (word) {
+                "Azure", "Bugfix", "DOS", "Denn", "Du", "ENTER", "Ewigkeit", "Festplatte",
+                "IOS", "MSN", "Microsoft", "Office", "Raubkopie", "Telekom", "Und", "Unix",
+                "Unser", "Update", "Vater", "also", "auch", "auf", "bist", "erlöse", "führe",
+                "geheiligt", "geschehe", "gib", "heute", "ist", "komme", "nicht", "sei", "so",
+                "sondern", "täglich", "unsere", "unsrer", "vergeben", "vergib", "von", "wir", "zu",
+                -> assertEquals(1, count)
+
+                "der", "wie",
+                -> assertEquals(2, count)
+
+                "Windows", "das", "in", "und",
+                -> assertEquals(3, count)
+
+                "Dein", "uns",
+                -> assertEquals(4, count)
+            }
+        }
     }
 }
