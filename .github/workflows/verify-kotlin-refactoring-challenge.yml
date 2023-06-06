@@ -6,7 +6,7 @@ name: "Verify #5 Kotlin Refactoring"
       - '5_Kotlin_Refactoring/**'
 
 jobs:
-  verify_challange:
+  verify_challenge:
     name: "Verify #5 Kotlin Refactoring"
     runs-on: ubuntu-latest
     steps:
