@@ -8,7 +8,7 @@ The task is to refactor the functions in [Main.kt](./src/main/kotlin/com/mediama
 
 Please implement your solution by only changing the [Main.kt](./src/main/kotlin/com/mediamarktsaturn/techsummit23/Main.kt) file.
 
-You can add more functions if you deems them necessary but please **do not rename** the existing ones.
+You can add more functions if you deem necessary but please **do not rename** the existing ones.
 
 For testing your solution, you can either run
 
