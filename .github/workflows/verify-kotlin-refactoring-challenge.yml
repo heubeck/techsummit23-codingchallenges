@@ -1,0 +1,26 @@
+---
+name: "Verify #5 Kotlin Refactoring"
+"on":
+  push:
+    paths:
+      - '5_Kotlin_Refactoring/**'
+
+jobs:
+  verify_challenge:
+    name: "Verify #5 Kotlin Refactoring"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: ⚙️ Run test
+        run: |
+          cd 5_Kotlin_Refactoring
+          ./gradlew test --no-daemon
