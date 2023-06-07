@@ -10,16 +10,17 @@ Please implement your solution by only changing the [Main.kt](./src/main/kotlin/
 
 You can add more functions if you deem necessary but please **do not rename** the existing ones.
 
-For testing your solution, you can either run
+For testing your solution, use the following command
 
 ```shell
+# Change directory to this challenge
 cd 5_Kotlin_Refactoring
+
+# Run test cases
 ./gradlew test
 ```
 
-if a JDK >= 17 is installed locally on your machine.
-
-Otherwise just push your changes and a GitHub workflow (named: `Verify #5 Kotlin Refactoring`) will run and verify the test cases.
+There is also a GitHub workflow (named: `Verify #5 Kotlin Refactoring`), which will run on each push and verify the test cases.
 
 ## Scoring
 
