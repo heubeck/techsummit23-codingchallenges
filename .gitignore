@@ -19,6 +19,7 @@ build
 pom.xml.versionsBackup
 *.tgz
 *.log
+out/
 
 # mac osx system files
 *.DS_Store
