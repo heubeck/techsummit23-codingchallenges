@@ -1,0 +1,19 @@
+---
+name: "Verify #3 Java Minimalist"
+"on":
+  push:
+    paths:
+      - '3_Java_Minimalist/**'
+
+jobs:
+  verify_challenge:
+    name: "Verify #3 Java Minimalist"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout
+        uses: actions/checkout@v3
+
+      - name: Check Spec
+        uses: jbangdev/jbang-action@v0.106.1
+        with:
+          script: "3_Java_Minimalist/Spec.java"

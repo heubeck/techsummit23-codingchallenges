@@ -17,7 +17,7 @@ The task is to sort the words of a given text by a defined weight:
 ## Implementation
 
 Please implement your solution by only changing the [Challenge.java](Challenge.java) file.
-For testing your solution to fulfill the spec, just run the `run.sh` script.
+For testing your solution to fulfill the spec, just run the `run.sh` script after installing [jbang](https://www.jbang.dev/).
 
 ## Scoring
 
