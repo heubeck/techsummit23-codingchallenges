@@ -24,7 +24,7 @@ class Spec {
                 var result = challenge.weightedSort(e.getValue().toString());
                 var resultLines = result.lines().toList();
 
-                var expected = properties.getProperty(e.getKey().toString().replace("input", "output"));
+                var expected = properties.getProperty(e.getKey().toString().replace("input", "expected"));
                 var expectedLines = Arrays.asList(expected.split("\s+"));
                 assertThat(resultLines).containsExactlyElementsOf(expectedLines);
             });

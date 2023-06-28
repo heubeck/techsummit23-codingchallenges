@@ -11,5 +11,6 @@ const passed = specFile.specifications.reduce((accumulator, current) => {
 if (passed) {
   console.log("📯 It's a match! 🐝📝");
 } else {
-  console.error('You missed something :(. Try again!');
+  console.error('⚠️ You missed something :(. Try again! ❌');
+  process.exit(1);
 }

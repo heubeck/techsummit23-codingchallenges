@@ -24,8 +24,7 @@ Please implement your solution by only changing the `weightedSort` implementatio
 file. You can change whatever you want in there, but the file **must** export a function named `weightedSort` that
 accepts a string and returns a string.
 
-For testing your solution to fulfill the spec, just run `node spec.mjs` or `node --no-warnings spec.mjs` to omit the
-warnings because of the used import assertion inside [spec.mjs](spec.mjs).
+For testing your solution to fulfill the spec, just run `run.sh`.
 
 ## Scoring
 
