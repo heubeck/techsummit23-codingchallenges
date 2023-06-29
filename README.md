@@ -5,7 +5,7 @@
 👉 Copy [this template](https://github.com/heubeck/techsummit23-codingchallenges/generate) as (public) repository to your own GitHub profile<br/>
 👉 Solve as many challenges as you like, following their respective guide<br/>
 👉 Don't forget to commit and push your solution<br/>
-👉 Submit your participation using [this form](https://forms.office.com/e/0CenbaEQcp)<br/>
+👉 Submit your participation using **[this form](https://forms.office.com/e/0CenbaEQcp)**<br/>
 
 #
 
@@ -21,4 +21,6 @@
 
 ## [#6 CSS Exploitation](6_CSS_Exploitation/)
 
-## [#7 ChatGPT Domination](7_ChatGPT_Domination/)
+## #7 Logo perception
+
+_see participation submission form_
