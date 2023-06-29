@@ -1,1 +1,0 @@
-# #7 ChatGPT Domination

@@ -21,6 +21,10 @@ foo/of
 foo/foobar
 ```
 
+## Implementation
+
+Please store your solution in the [challenge.rock](challenge.rock) file. You're free to use whatever (online) IDE and interpreter you find, it will be tested using [this one](https://codewithrockstar.com/online).
+
 ## Scoring
 
-Solutions will be judged based on function (of course it should work) and the use of idiomatic Rockstar language with references to MediaMarktSaturn. Winner will be the working solution with the most literally valuabe lyrics, praising MMS Technology.
+Solutions will be judged based on function (of course it should work) and the use of idiomatic Rockstar language with references to MediaMarktSaturn. Winner will be the working solution with the most literally valuable lyrics, praising MMS Technology.
