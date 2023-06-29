@@ -19,7 +19,7 @@
 
 ## [#5 Kotlin Refactoring](5_Kotlin_Refactoring/)
 
-## [#6 CSS Exploitation](6_CSS_Exploitation/)
+## [#6 CSS Drawing](6_CSS_Drawing/)
 
 ## #7 Logo perception
 
