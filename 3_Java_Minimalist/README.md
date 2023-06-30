@@ -8,11 +8,13 @@ The task is to sort the words of a given text by a defined weight:
 * The weight of a word is the sum of its characters ascii value (`aBc` = 98 + 66 + 99 = 263)
 * Punctuation characters (`.`, `,`, `?`, `!` and so on) shall be ignored
 * The words shall be sorted descending by their weight and outputted as distinct list as follows:
+  ```text
+    <heavy word>|<weight>
+    <light word>|<weight>
+  ```
+  If two words have exactly the same weight, they should be sorted descending by the ascii codes of their first character (on equality the second char, and so on).
 
-```text
-<heavy word>|<weight>
-<light word>|<weight>
-```
+It is disallowed to use any third party dependencies.
 
 ## Implementation
 

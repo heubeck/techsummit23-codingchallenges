@@ -24,7 +24,18 @@ public class Challenge {
     record Weighted(String word) implements Comparable<Weighted> {
         @Override
         public int compareTo(Weighted o) {
-            return o.weight() - weight();
+            var weightDelta = o.weight() - weight();
+            if (weightDelta != 0) {
+                return weightDelta;
+            }
+            var length = Integer.min(o.word().length(), word.length());
+            for (int i = 0; i < length; i++) {
+                var charDelta = o.word().charAt(i) - word.charAt(i);
+                if (charDelta != 0) {
+                    return charDelta;
+                }
+            }
+            return 0;
         }
         private int weight() {
             return word.chars().sum();
