@@ -2,7 +2,7 @@
 
 ## Specification
 
-This is about plagiarizing the MMS Tech logo by just using empty `div`s and CSS.
+This is about plagiarizing the MMS Tech logo by just manipulating empty `div`s and CSS.
 
 ![](../.assets/MMST.png)
 
@@ -10,7 +10,7 @@ This is about plagiarizing the MMS Tech logo by just using empty `div`s and CSS.
 
 Therefore please solely write to the `<style` and `<div class="logo">` elements in the [challenge.html](challenge.html) file.
 
-You're free to use any CSS magic, but the only permitted html element are `div` inside the `div.logo` container.
+You're free to use any CSS magic (apart from including, pixel mapping or vectorizing the original image of course), but the only permitted html element are `div`s inside the `div.logo` container.
 
 ## Scoring
 
