@@ -11,22 +11,40 @@
 
 ![](.assets/1_generate_repo.png)
 
+---
+
 ![](.assets/2_open_codespaces.png)
 
-`sdk install java 20-tem; sdk install jbang`
+---
+
+### `sdk install java 20-tem; sdk install jbang`
 ![](.assets/3_install_sdks.png)
+
+---
 
 ![](.assets/7_ext_rockstar.png)
 
+---
+
 ![](.assets/5_ext_jbang.png)
+
+---
 
 ![](.assets/6_ext_kotlin.png)
 
-![](..assets/8_exec_jbang.png)
+---
 
 ![](.assets/4_ext_html_preview.png)
 
+---
+
+![](.assets/8_exec_jbang.png)
+
+---
+
 ![](.assets/9_git_stage.png)
+
+---
 
 ![](.assets/10_git_push.png)
 
