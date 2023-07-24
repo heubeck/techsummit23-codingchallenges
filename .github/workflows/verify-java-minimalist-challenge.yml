@@ -14,6 +14,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Check Spec
-        uses: jbangdev/jbang-action@v0.109.0
+        uses: jbangdev/jbang-action@v0.110.0
         with:
           script: "3_Java_Minimalist/Spec.java"
