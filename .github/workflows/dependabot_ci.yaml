@@ -16,7 +16,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Fetch PR metadata
-        uses: dependabot/fetch-metadata@v1.6.0
+        uses: dependabot/fetch-metadata@v2.0.0
         id: dependabot-metadata
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
