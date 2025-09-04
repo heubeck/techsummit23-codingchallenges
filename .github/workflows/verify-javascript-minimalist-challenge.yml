@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: 📦 Checkout
         uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: '4_JavaScript_Minimalist/.nvmrc'
       - name: Check Spec
