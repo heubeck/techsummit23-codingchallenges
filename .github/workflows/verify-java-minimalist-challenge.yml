@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Check Spec
         uses: jbangdev/jbang-action@v0.132.1
